@@ -1,0 +1,21 @@
+{
+  "name": "ajstudio",
+  "version": "1.0.0",
+  "description": "Al Jazari Studio Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "aJstudio"
+  },
+  "author": "Fathur Hidayat",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1"
+  }
+}
