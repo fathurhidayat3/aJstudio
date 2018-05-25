@@ -5,128 +5,289 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Al Jazari Studio</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/aJstudio.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/aJstudio.css">
 
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <div class="ajs__banner d-flex flex-column">
-    <nav class="navbar navbar-expand-lg navbar-dark ajs__navbar px-5 py-3">
-      <div class="container">
+  <header class="ajs__header">
+    <div class="navbar navbar-expand-lg is-transparent navbar-dark ajs__navbar">
+      <nav class="container">
         <a class="navbar-brand font-weight-bold" href="#">Al Jazari Studio</a>
         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
-            <li class="nav-item active ajs__nav__item">
-              <a class="nav-link" href="#">ABOUT
+            <li class="nav-item ajs__nav__item">
+              <a class="nav-link" href="#">TENTANG KAMI
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item ajs__nav__item">
-              <a class="nav-link" href="#">PORTOFOLIO</a>
+              <a class="nav-link" href="#">KETENTUAN</a>
             </li>
             <li class="nav-item ajs__nav__item">
-              <a class="nav-link" href="#">ORDER</a>
+              <a class="nav-link" href="#">BANTUAN</a>
             </li>
           </ul>
-          <a name="" id="" class="btn ajs__btn--blueviolet ajs__btn--circle shadow-sm" href="#" role="button">
+          <a name="" id="" class="btn ajs__btn--blueviolet ajs__btn--icon" href="#" role="button">
             <i class="fa fa-github"></i>
           </a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
-    <div class="ajs__banner-bottom ajs__vertical-center justify-content-center">
-      <div class="text-center text-white">
-        <h1 class="display-5">Front-End Development</h1>
-        <p>Our team of front-end developers not only supply technical expertise,
-          <br> but make sure your project is done the right way</p>
-        <a name="" id="" class="btn btn-warning shadow-lg ajs__btn--ellipse" href="#" role="button">Read more</a>
+    <div class="ajs__banner">
+      <div class="ajs__banner-rounded-bg">
+        <span class="banner-shade-1">
+          <span class="banner-shade-2">
+            <span class="banner-shade-3"></span>
+          </span>
+        </span>
       </div>
 
-      <div class="ajs__banner-bottom__card shadow-lg">
-        <div class="ajs__card card border-0 p-3">
-          <div class="card-body text-center">
-            <small class="card-title">Projects done in 9 months</small>
-            <div class="card-body">
-              <div class="row ajs__mini-portofolio">
-                <div class="col-md-4">
-                  <h1 class="text--accent">24</h1>
-                  <p class="text--grey">slicing</p>
-                </div>
-                <div class="col-md-4">
-                  <h1 class="text--accent">13</h1>
-                  <p class="text--grey">wrap to vue</p>
-                </div>
-                <div class="col-md-4">
-                  <h1 class="text--accent">9</h1>
-                  <p class="text--grey">full stack app</p>
-                </div>
+      <div class="container">
+        <div class="ajs__banner-content">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <div class="ajs__banner-header">
+                <h2 class="ajs__banner-title">Ikut serta
+                  <span>berkontribusi </span>
+                  <br class="d-none d-xl-block"> di dunia pendidikan dengan
+                  <span>bergabung</span>
+                  <br class="d-none d-xl-block"> bersama
+                  <span>200 pengajar</span> lain</h2>
+                <div class="ajs__gaps"></div>
+                <button class="ajs__btn--ellipse shadow-lg">Gabung Sekarang</button>
+                <div class="ajs__gaps--small"></div>
+                <span>&emsp;atau&emsp;</span>
+                <div class="ajs__gaps--small"></div>
+                <button class="ajs__btn--ellipse shadow-lg">Daftarkan Lembaga Anda</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <section class="ajs__body">
+    <div class="ajs__solution">
+      <div class="ajs__spacer"></div>
+      <div class="container text-center">
+        <h2 class="ajs__solution__title">Apa saja yang diperoleh ?</h2>
+        <div class="ajs__solution__content container shadow-lg p-5">
+          <div class="row">
+            <div class="col-md-2 p-3">
+              <i class="fa fa-lightbulb-o fa-5x text--secondary" aria-hidden="true"></i>
+              <h5 class="mt-3 ajs__solution__jargon">Solutions in Context</h5>
+            </div>
+            <div class="col-md-4 text-left text--grey py-4">
+              There’s no one-size-fits-all solution when it comes to software. However, there is a solution that fits each individual opportunity.
+              We’re here to help you find it.
+            </div>
+            <div class="col-md-2 p-3">
+              <i class="fa fa-group fa-5x text--secondary" aria-hidden="true"></i>
+              <h5 class="mt-3 ajs__solution__jargon">System Transformation</h5>
+            </div>
+            <div class="col-md-4 text-left text--grey py-4">
+              Leverage our emerging technology expertise, let us help you re-platform your solution. Transform legacy products into modern,
+              full-featured software solutions.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2 p-3">
+              <i class="fa fa-heart-o fa-5x text--secondary" aria-hidden="true"></i>
+              <h5 class="mt-3 ajs__solution__jargon">Superior Quality</h5>
+            </div>
+            <div class="col-md-4 text-left text--grey py-4">
+              Employ a team that takes ownership of your solution, delivering the highest quality work: reliable, relevant and future-proof.
+            </div>
+            <div class="col-md-2 p-3">
+              <i class="fa fa-level-up fa-5x text--secondary" aria-hidden="true"></i>
+              <h5 class="mt-3 ajs__solution__jargon">System Transformation</h5>
+            </div>
+            <div class="col-md-4 text-left text--grey py-4">
+              Leverage our emerging technology expertise, let us help you re-platform your solution. Transform legacy products into modern,
+              full-featured software solutions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ajs__mission">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="ajs__support">
+              <span class="ajs__support__shadow--1"></span>
+              <span class="ajs__support__shadow--2"></span>
+              <div class="ajs__support__content">
+                Misi Kami
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="ajs__image">
+              <div class="ajs__image__content text-center">
+                <img src="./assets/images/graph-lavendar-a.png" 
+                width="220">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="ajs__solution d-flex flex-column">
-    <div class="ajs__solution__spacer"></div>
-    <div class="ajs__solution__offers text-center">
-      <h2 class="ajs__solution__title">Why Choose Us ?</h2>
-      <div class="ajs__solution__content container shadow-lg p-5">
+    <div class="ajs__process">
+      <div class="container text-center">
+        <div class="ajs__spacer"></div>
+        <h2 class="ajs__solution__title">Proses Belajar</h2>
         <div class="row">
-          <div class="col-md-3 p-4">
-            <i class="fa fa-lightbulb-o fa-5x text--accent" aria-hidden="true"></i>
-            <h5 class="mt-3">Solutions in Context</h5>
+          <div class="col-lg-6 col-xs-12 ajs__process__wrapper">
+            <div class="row p-lg-5">
+              <div class="col-3">
+                <div class="ajs__process__item">
+                  <span class="ajs__process__inner"></span>
+                  <h5>1</h5>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="ajs__process__item">
+                  <span class="ajs__process__inner"></span>
+                  <h5>2</h5>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="ajs__process__item">
+                  <span class="ajs__process__inner"></span>
+                  <h5>3</h5>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="ajs__process__item--last">
+                  <span class="ajs__process__inner"></span>
+                  <h5>4</h5>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3 text-left text--grey py-4">
-            There’s no one-size-fits-all solution when it comes to software. However, there is a solution that fits each individual opportunity.
-            We’re here to help you find it.
-          </div>
-          <div class="col-md-3 p-4">
-            <i class="fa fa-level-up fa-5x text--accent" aria-hidden="true"></i>
-            <h5 class="mt-3">System Transformation</h5>
-          </div>
-          <div class="col-md-3 text-left text--grey py-4">
-            Leverage our emerging technology expertise, let us help you re-platform your solution. Transform legacy products into modern,
-            full-featured software solutions.
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-3 p-4">
-            <i class="fa fa-heart-o fa-5x text--accent" aria-hidden="true"></i>
-            <h5 class="mt-3">Superior Quality</h5>
-          </div>
-          <div class="col-md-3 text-left text--grey py-4">
-            Employ a team that takes ownership of your solution, delivering the highest quality work: reliable, relevant and future-proof.
-          </div>
-          <div class="col-md-3 p-4">
-            <i class="fa fa-level-up fa-5x text--accent" aria-hidden="true"></i>
-            <h5 class="mt-3">System Transformation</h5>
-          </div>
-          <div class="col-md-3 text-left text--grey py-4">
-            Leverage our emerging technology expertise, let us help you re-platform your solution. Transform legacy products into modern,
-            full-featured software solutions.
+          <div class="col-lg-6 col-xs-12 text-left p-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi minima necessitatibus at. Excepturi amet culpa rerum
+            neque ea cum eligendi optio totam tempora, quam aperiam expedita, consequatur quas commodi id!
           </div>
         </div>
       </div>
     </div>
 
-  <div class="ajs__brief d-flex ajs__vertical-center">
-    <div class="ajs__brief__body"></div>
-    <div class="ajs__brief__content"></div>
-  </div>
+    <div class="ajs__process">
+      <div class="container text-center">
+        <div class="ajs__spacer"></div>
+        <h2 class="ajs__solution__title">Tim Kami</h2>
+        <div class="row">
+          <div class="col-md-3 py-3 px-4">
+            <div class="card border-0 ajs__card">
+              <span class="ajs__card-point"></span>
+              <img class="card-img-top" src="./assets/images/team-f-des.jpg" alt="">
+              <div class="card-body text-left">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Penasihat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 px-4">
+            <div class="card border-0 ajs__card">
+              <span class="ajs__card-point"></span>
+              <img class="card-img-top" src="./assets/images/team-f-des.jpg" alt="">
+              <div class="card-body text-left">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 px-4">
+            <div class="card border-0 ajs__card">
+              <span class="ajs__card-point"></span>
+              <img class="card-img-top" src="./assets/images/team-f-des.jpg" alt="">
+              <div class="card-body text-left">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Front End Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 px-4">
+            <div class="card border-0 ajs__card">
+              <span class="ajs__card-point"></span>
+              <img class="card-img-top" src="./assets/images/team-f-des.jpg" alt="">
+              <div class="card-body text-left">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Back End Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    
+    <div class="ajs__application">
+      <!-- <span class="ajs__application-shadow"></span> -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="ajs__show-app">
+              <img src="./assets/images/mobile-app-a.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ajs__download">
+      <div class="container">
+        <div class="row px-lg-5">
+          <div class="col-md-4">
+            <span class="ajs__brand">Al Jazari Studio</span>
+          </div>
+          <div class="col-md-8">
+            <div class="row ajs__find-us text-lg-right">
+              <div class="col-lg-12 ajs__find-item">
+                <a class="btn ajs__download__btn text--grey" href="https://play.google.com/store/apps/details?id=com.kitabisa.android&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                  Unduh aplikasi:&emsp;
+                  <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="ajs__footer">
+    <div></div>
+
+  </footer>
+
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".ajs__navbar");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
 </body>
 
 </html>
