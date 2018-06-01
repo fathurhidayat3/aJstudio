@@ -390,7 +390,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 
 .ajs__show-app {
-  /* position: relative; */
   text-align: center;
 }
 .ajs__show-app img {
