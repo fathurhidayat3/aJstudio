@@ -547,3 +547,29 @@ section {
   .ajs__process__wrapper ~ .col-lg-6 {
     text-align: center !important;
     padding: 1rem auto; } }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf"); }
+
+.f-poppins {
+  font-family: "Poppins", sans-serif; }
+
+.f-raleway {
+  font-family: "Raleway", sans-serif; }
+
+.text--accent {
+  color: #bf00ff !important; }
+
+.text--secondary {
+  color: #f2874e !important; }
+
+.text--grey {
+  color: #88848a !important; }
+
+.ajs__img--w80 {
+  width: 80px; }
