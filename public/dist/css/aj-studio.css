@@ -115,7 +115,13 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  animation: banner-header-move-up 1s 1; }
+
+@keyframes banner-header-move-up {
+  from {
+    transform: translateY(100px);
+    opacity: 0; } }
   .ajs__banner-header span {
     font-size: 0.7em; }
   .ajs__banner-header .ajs__banner-title {
@@ -175,6 +181,21 @@ section {
   .ajs__solution .ajs__solution__header {
     font-size: 1em;
     font-weight: 700; }
+
+.move-from--left {
+  animation: move-from--left 1s 1; }
+
+@keyframes move-from--left {
+  from {
+    transform: translateX(-30px);
+    opacity: .5; } }
+
+.fade--in {
+  animation: fade--in 2s 1; }
+
+@keyframes fade--in {
+  from {
+    opacity: 0; } }
 
 .ajs__portfolio {
   padding: 100px 0 50px 0;
@@ -304,18 +325,18 @@ section {
   position: relative;
   padding: 60px;
   height: 350px;
-  width: 45%;
+  width: 65%;
   background: white; }
   .ajs__image::before {
     content: "";
     position: absolute;
     top: 0;
-    right: -70px;
+    right: -90px;
     height: inherit;
-    width: 100px;
+    width: 120px;
     background: white;
     border-radius: 0 100px 50px 0;
-    transform: skew(-7deg); }
+    transform: skew(-5deg); }
   .ajs__image::after {
     content: "";
     position: absolute;
@@ -324,7 +345,8 @@ section {
     height: inherit;
     width: 110px;
     background: white;
-    border-radius: 30px 0 0 30px; }
+    border-radius: 30px 0 0 25px;
+    transform: skew(2deg); }
 
 .ajs__image__content {
   position: relative;

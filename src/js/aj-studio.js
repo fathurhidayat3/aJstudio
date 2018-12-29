@@ -2,6 +2,14 @@ $(function() {
   $(document).scroll(function() {
     var $nav = $(".ajs__navbar");
     $nav.toggleClass("scrolled", $(this).scrollTop() > 550);
+
+    var $solHeader = $(".ajs__solution__header");
+    $solHeader.addClass("move-from--left", $(this).scrollTop() > 700);
+
+    $solHeader
+      .parent()
+      .next()
+      .addClass("fade--in", $(this).scrollTop() > 650);
   });
 
   var preview = $(".ajs__preview");
@@ -19,25 +27,25 @@ $(function() {
     items: 4,
     responsive: {
       0: {
-        items: 1,
+        items: 1
       },
       480: {
-        items: 1,
+        items: 1
       },
       768: {
-        items: 4,
+        items: 4
       },
       1366: {
-        items: 4,
+        items: 4
       },
       1600: {
-        items: 6,
+        items: 6
       },
       1900: {
-        items: 8,
+        items: 8
       }
     },
-    onTranslate: function (event) {
+    onTranslate: function(event) {
       console.log(event);
     }
   });
