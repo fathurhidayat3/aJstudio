@@ -16,7 +16,8 @@ gulp.task("sass-dep", function() {
   return gulp
     .src([
       "node_modules/font-awesome/scss/font-awesome.scss",
-      "node_modules/bootstrap/scss/bootstrap.scss"
+      "node_modules/bootstrap/scss/bootstrap.scss",
+      "node_modules/owl.carousel/src/scss/owl.carousel.scss"
     ])
     .pipe(sass())
     .pipe(gulp.dest("public/dist/css"))
@@ -28,6 +29,7 @@ gulp.task("js", function() {
     .src([
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
       "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/owl.carousel/src/js/owl.carousel.js",
       "src/js/*.js"
       // "node_modules/tether/dist/js/tether.min.js"
     ])
@@ -44,7 +46,9 @@ gulp.task("serve", function() {
   });
 
   gulp.watch(
-    ["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"],
+    ["node_modules/bootstrap/scss/bootstrap.scss",
+    "node_modules/owl.carousel/src/scss/owl.carousel.scss"
+    , "src/scss/*.scss"],
     gulp.series("sass-base", "sass-dep")
   );
 

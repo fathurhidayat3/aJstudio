@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#7f00ff" />
+
     <title>Al Jazari Studio</title>
 
     <link
@@ -11,19 +13,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="dist/css/owl.carousel.css" />
     <link rel="stylesheet" href="dist/css/aj-studio.css" />
 
     <script src="dist/js/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/owl.carousel.js"></script>
   </head>
 
-  <body>
-    <div class="ajs__header">
+  <body id="home">
+    <section class="ajs__header">
       <div
         class="navbar navbar-expand-lg is-transparent navbar-dark ajs__navbar"
       >
         <nav class="container">
-          <a class="navbar-brand font-weight-bold" href="#">Al Jazari Studio</a>
+          <a class="navbar-brand font-weight-bold" href="#home"
+            >Al Jazari Studio</a
+          >
           <button
             class="navbar-toggler hidden-lg-up"
             type="button"
@@ -36,12 +42,12 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item ajs__nav__item">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="#solution"
                   >ABOUT US <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item ajs__nav__item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
+                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
               </li>
               <li class="nav-item ajs__nav__item">
                 <a class="nav-link" href="#">CONTACT</a>
@@ -55,178 +61,236 @@
         <div class="ajs__banner-rounded-bg"></div>
         <div class="ajs__banner-rounded-bg--2"></div>
 
-        <div class="container ajs__banner-content">
-          <div class="row text-center">
-            <div class="col-lg-12">
-              <div class="ajs__banner-header">
-                <h1 class="ajs__banner-title">
-                  Big responsibility needs <br />
-                  a big power, isn't it ?
-                </h1>
+        <div class="ajs__banner-header text-center">
+          <h1 class="ajs__banner-title">
+            Big responsibility needs <br />
+            a big power, isn't it ?
+          </h1>
 
-                <h5 class="ajs__banner-desc my-4">
-                  we think so, that's why we're here to give a hand <br />
-                  on each web/app related problem, as our motto
-                </h5>
+          <h5 class="ajs__banner-desc my-4">
+            we think so, that's why we're here to give a hand <br />
+            on each web/app related problem, as our motto
+          </h5>
 
-                <h3 class="ajl__banner-motto">Type to Solve</h3>
-              </div>
-            </div>
-          </div>
+          <h3 class="ajl__banner-motto">Type to Solve</h3>
+
+          <div class="ajl__bottom-arrow"></div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section class="ajs__body">
-      <div class="ajs__solution">
-        <div class="ajs__spacer ajs__spacer"></div>
+      <!-- <div class="ajs__spacer"></div> -->
 
-        <div class="container text-center">
-          <h2 class="ajs__solution__title">Why Choose Us ?</h2>
+      <div class="ajs__solution container" id="solution">
+        <h2 class="ajs__title text-center">Why Choose Us ?</h2>
 
-          <div class="ajs__solution__content container shadow-lg p-5">
-            <div class="row">
-              <div class="col-md-2 p-3">
-                <img
-                  class="ajs__img--w80"
-                  src="images/icons/creative.svg"
-                  alt=""
-                />
-                <h5 class="mt-3 ajs__solution__jargon">Creative</h5>
-              </div>
-
-              <div class="col-md-4 f-raleway text-left text--grey py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                expedita odio dolor nostrum voluptatibus consequuntur, debitis
-                iusto, aut non, excepturi quam quia eos quos! Eveniet quia vel
-                dignissimos nisi minima.
-              </div>
-
-              <div class="col-md-2 p-3">
-                <img
-                  class="ajs__img--w80"
-                  src="images/icons/puzzle-pieces.svg"
-                  alt=""
-                />
-                <h5 class="mt-3 ajs__solution__jargon">Problem Solve</h5>
-              </div>
-
-              <div class="col-md-4 f-raleway text-left text--grey py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae labore ab autem qui! Atque, cumque quibusdam. Adipisci
-                nulla mollitia dolorem, praesentium eaque, beatae eos labore nam
-                voluptates cum ex aspernatur?
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2 p-3">
-                <img
-                  class="ajs__img--w80"
-                  src="images/icons/objective.svg"
-                  alt=""
-                />
-                <h5 class="mt-3 ajs__solution__jargon">Objective</h5>
-              </div>
-
-              <div class="col-md-4 f-raleway text-left text--grey py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                consectetur sapiente alias aperiam libero vitae reprehenderit
-                quae animi tempore iste asperiores, hic dolorem illum ratione ex
-                dignissimos quis sint fugiat.
-              </div>
-
-              <div class="col-md-2 p-3">
-                <img
-                  class="ajs__img--w80"
-                  src="images/icons/network.svg"
-                  alt=""
-                />
-                <h5 class="mt-3 ajs__solution__jargon">Team Player</h5>
-              </div>
-
-              <div class="col-md-4 f-raleway text-left text--grey py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-                veniam animi quas aperiam iste tempore maxime quam inventore
-                molestiae blanditiis quidem dolorum voluptates sequi voluptatum
-                et repellat sed obcaecati dicta.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ajs__sponsors">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-4 col-lg-1">
-              <img src="images/logos/bootstrap.png" class="img-fluid" />
-            </div>
-            <div class="col-4 col-lg-1">
-              <img src="images/logos/sass.png" class="img-fluid" />
-            </div>
-            <div class="col-4 col-lg-1">
-              <img src="images/logos/react.png" class="img-fluid" />
-            </div>
-            <div class="col-4 col-lg-1">
-              <img src="images/logos/django.png" class="img-fluid" />
-            </div>
-            <div class="col-4 col-lg-1">
-              <img src="images/logos/laravel.png" class="img-fluid" />
-            </div>
-            <div class="col-4 col-lg-1">
-              <img src="images/logos/android.png" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ajs__mission">
-        <div class="container">
+        <div class="ajs__content">
           <div class="row">
-            <div class="col-lg-7">
-              <div class="ajs__support">
-                <span class="ajs__support__shadow--1"></span>
-                <span class="ajs__support__shadow--2"></span>
-                <div class="ajs__support__content pr-lg-5">
-                  <h4 class="f-poppins font-weight-bold">Our Mission</h4>
+            <div class="col-md-2 p-3">
+              <img class="wpx--80" src="images/icons/creative.svg" alt="" />
+              <h5 class="mt-3 ajs__solution__header">Creative</h5>
+            </div>
 
-                  <div class="d-flex row py-4 px-3">
-                    <h5 class="mt-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Culpa ducimus odit quae quos facilis. Sunt deleniti
-                      corrupti dignissimos quod explicabo odio dolores tenetur
-                      nihil illo iure quisquam, similique, esse molestias.
-                    </h5>
+            <div class="col-md-4 f-raleway text-left text--gray py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              expedita odio dolor nostrum voluptatibus consequuntur, debitis
+              iusto, aut non, excepturi quam quia eos quos! Eveniet quia vel
+              dignissimos nisi minima.
+            </div>
 
-                    <h5 class="mt-0">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Voluptatem alias minus quo velit ut veniam quae, ullam
-                      suscipit? Id a debitis cumque aliquam necessitatibus
-                      repellat officia, reiciendis quibusdam ipsam tempore!
-                    </h5>
-                  </div>
+            <div class="col-md-2 p-3">
+              <img
+                class="wpx--80"
+                src="images/icons/puzzle-pieces.svg"
+                alt=""
+              />
+              <h5 class="mt-3 ajs__solution__header">Problem Solve</h5>
+            </div>
+
+            <div class="col-md-4 f-raleway text-left text--gray py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              labore ab autem qui! Atque, cumque quibusdam. Adipisci nulla
+              mollitia dolorem, praesentium eaque, beatae eos labore nam
+              voluptates cum ex aspernatur?
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2 p-3">
+              <img class="wpx--80" src="images/icons/objective.svg" alt="" />
+              <h5 class="mt-3 ajs__solution__header">Objective</h5>
+            </div>
+
+            <div class="col-md-4 f-raleway text-left text--gray py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              consectetur sapiente alias aperiam libero vitae reprehenderit quae
+              animi tempore iste asperiores, hic dolorem illum ratione ex
+              dignissimos quis sint fugiat.
+            </div>
+
+            <div class="col-md-2 p-3">
+              <img class="wpx--80" src="images/icons/network.svg" alt="" />
+              <h5 class="mt-3 ajs__solution__header">Team Player</h5>
+            </div>
+
+            <div class="col-md-4 f-raleway text-left text--gray py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              veniam animi quas aperiam iste tempore maxime quam inventore
+              molestiae blanditiis quidem dolorum voluptates sequi voluptatum et
+              repellat sed obcaecati dicta.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ajs__mission container" id="mission">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-7">
+            <div class="ajs__support">
+              <span class="ajs__support__shadow--1"></span>
+              <span class="ajs__support__shadow--2"></span>
+              <div class="ajs__support__content pr-lg-5">
+                <h4 class="f-poppins font-weight-bold">Our Mission</h4>
+
+                <div class="d-flex row py-4 px-3">
+                  <h5 class="mt-0">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa ducimus odit quae quos facilis. Sunt deleniti corrupti
+                    dignissimos quod explicabo odio dolores tenetur nihil illo
+                    iure quisquam, similique, esse molestias.
+                  </h5>
+
+                  <h5 class="mt-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Voluptatem alias minus quo velit ut veniam quae, ullam
+                    suscipit? Id a debitis cumque aliquam necessitatibus
+                    repellat officia, reiciendis quibusdam ipsam tempore!
+                  </h5>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-5">
-              <div class="ajs__image">
-                <div class="ajs__image__content text-center">
-                  <img src="images/graph-lavendar-a.png" width="220" />
-                </div>
+          <div class="col-lg-5">
+            <div class="ajs__image">
+              <div class="ajs__image__content text-center">
+                <img src="images/graph-lavendar-a.png" width="220" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container text-center">
+      <div class="ajs__portfolio" id="portfolio">
+        <h2 class="ajs__title text-center">Portfolio</h2>
+
+        <div class="ajs__preview">
+          <div class="ajs__content col-md-12">
+            <button class="ajs__poftfolio__button ajs__poftfolio__button--prev">
+              <
+            </button>
+            <button class="ajs__poftfolio__button ajs__poftfolio__button--next">
+              >
+            </button>
+            <div class="owl-carousel">
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+
+              <div class="card border-0 shadow-sm">
+                <img
+                  class="card-img-top shadow"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167f8ed72ab%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167f8ed72ab%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22106.3984375%22%20y%3D%2296.3%22%3E247x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Card image cap"
+                />
+                <div class="card-body"><div class="card-text">Lorem Application</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ajs__sponsors container">
+        <div class="row justify-content-center">
+          <div class="col-4 col-lg-1">
+            <img src="images/logos/bootstrap.png" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-1">
+            <img src="images/logos/sass.png" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-1">
+            <img src="images/logos/react.png" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-1">
+            <img src="images/logos/django.png" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-1">
+            <img src="images/logos/laravel.png" class="img-fluid" />
+          </div>
+          <div class="col-4 col-lg-1">
+            <img src="images/logos/android.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <div class="ajs__process container" id="process">
         <div class="ajs__spacer"></div>
-        <h2 class="ajs__solution__title">Development Process</h2>
+
+        <h2 class="ajs__title text-center">Development Process</h2>
 
         <div class="row">
-          <div class="col-lg-6 col-xs-12 ajs__process__wrapper">
+          <div class="col-lg-5 col-xs-12 ajs__process__wrapper">
             <div class="row p-lg-5">
               <div class="col-3">
                 <div class="ajs__process__item">
@@ -255,7 +319,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-xs-12 f-raleway text-left py-lg-5">
+          <div class="col-lg-7 col-xs-12 f-raleway text-left py-lg-5">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
             minima necessitatibus at. Excepturi amet culpa rerum neque ea cum
             eligendi optio totam tempora, quam aperiam expedita, consequatur
@@ -263,12 +327,12 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
 
       <!-- <div class="ajs__process"> -->
-      <div class="container text-center">
+      <div class="ajs__team-member container" id="team-member">
         <div class="ajs__spacer"></div>
-        <h2 class="ajs__solution__title">Our Team Member</h2>
+
+        <h2 class="ajs__title text-center">Our Team Member</h2>
 
         <div class="row justify-content-center mt-4">
           <div class="col-md-3 py-3 px-4">
@@ -303,7 +367,7 @@
         </div>
       </div>
 
-      <div class="ajs__application">
+      <div class="ajs__application" id="application">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -325,7 +389,7 @@
               <div class="row ajs__find-us text-lg-right">
                 <div class="col-lg-12 ajs__find-item">
                   <a
-                    class="btn ajs__download__btn text--grey"
+                    class="btn ajs__download__btn text--gray"
                     href="https://play.google.com/store/apps/details?id=com.kitabisa.android&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                   >
                     Unduh aplikasi:&emsp;
